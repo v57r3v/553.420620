@@ -1,35 +1,36 @@
 java c
-553.420/620 Probability
-Assignment #04
-1. We have two spinners: spinner 1 has 5 equally likely regions numbered 1 through 5, spinner 2 has 6 equally likely regions numbered 1 through 6. You spin each spinner once and note the region number the spinner landed.
-(a) What’s the probability you landed on at least one even number?
-(b) Given you landed on at least one even number, what’s the probability the other number is odd?
-Hint: for (a) it might be helpful to define Ei to be the event that spinner i landed even. Then E1 ∪ E2 is the event you landed on at least one even.
-2. (a) Flip a fair coin twice. One of the flips is a head. What’s the probability the other is a tail?
-(b) The Smith family has two children. One of them is Tina – a girl. What’s the probability Tina has a brother?
-3. (a) In dealing two cards, what’s the probability we get a heart followed by a red card?
-(b) In dealing two cards, what’s the probability you get a red card followed by a heart?
-(c)* In dealing five cards, what’s the probability we see a black followed by black followed by red followed by a spade followed by a heart?
-* just as in part (b) if we invoke some nice property of the sample space this problem is not too bad.
-4. (a) Roll a 6-sided die twice. Given a 1 occurred, what’s the probability the first one shows a 6?
-(b) Roll a 6-sided die twice. Given exactly one 1 occured, that’s the probability the first is a 6?
-5. Among two coins – one fair, the other two-headed – one is selected uniformly at random.
-(a) The coin is flipped twice. Let Hi be the event that we get a head on the ith flip, i = 1, 2. Are H1 and H2 independent? Justify your assertion.
-(b) Flip the coin n times, where n > 1 be an integer. If the selected coin came up 代 写553.420/620 Probability Assignment #04Matlab
-代做程序编程语言heads on all n flips, what’s the probability the two-headed coin was selected?
-6. I deal each of three people 3 cards. What’s the probability at least one person has all red cards?
-7. We have two boxes each filled with 2 red and 1 black balls. Two balls are drawn uniformly at random from one other these boxes and put into the other and then two balls are drawn from this box. What’s the probability we draw 2 red balls?
-8. Two dice are selected without replacement from a 4-sided and two 6-sided dice, and rolled. If the sum total on the dice is 5 compute the probability we selected both 6-sided dice.
-9. Angela hits the bulls-eye of a dartboard with probability 5/1 independently from throw to throw.
-(a) What’s the probability with three (3) throws, Angela hits the bulls-eye all three times?
-(b) If Angela hits the bulls-eye exactly once in three throws, what’s the probability she hit the bulls-eye on her first throw? There’s a very intuitive answer and a more rigorous one, provide both.
-(c) If Angela hits the bulls-eye at least once in three throws, what’s the probability she hit the bulls-eye on her first throw?
-10. (continued from problem 9.) Brendan hits the bulls-eye of a dartboard with probability 4/1 independently from throw to throw.
-(a) Angela and Brendan each throw one dart. If the bulls-eye is hit (by one or both of them) what’s the probability Angela hits the bulls-eye?
-(b) Angela and Brendan each throw one dart. If the bulls-eye is hit (by one or both of them) what’s the probability Brendan hits the bulls-eye?
-(c) Angela and Brendan each throw one dart. If the bulls-eye is hit (by one or both of them) what’s the probability they both hit the bulls-eye?
+553.420/620 Probability 
+Assignment #03
+1. When n and k are nonnegative integers with 0 ≤ k ≤ n, the binomial coefficient  can the thought of as the number of subsets of size k from an n-element set and either of the following formulas can be used to compute it:
 
+Now let x ≠ 0 be any real number. With an abuse of notation, when k any nonnegative integer, we can define
 
+For example,  and 
+Let r ≥ 1 and y ≥ 0 both be integers. Show
+
+Remark. The binomial coefficient on the right is called the negative binomial coefficient for this reason.
+2. Simplify the following completely with justification. If you are appealing to a theorem or identity, be sure to carefully show what, where, and how it is being used. In all of these expressions n > 0 is an integer.
+(a) 
+(b)  
+(c) In the expansion (2x − 1)10 what is the coefficient of x5? Justify your assertion.
+(d) When n is odd, find a simple expression with justification for 
+3. Consider a standard deck of 52 cards. The following are separate questions unless noted otherwise.
+(a) We deal 13 cards to a player. What’s the probability they have 3 clubs, 3 diamonds, 3 hearts, and 4 spades.
+(b) We deal 13 cards to each of 4 players – a Bridge deal. What’s the probability that one player gets all 4 Aces and another player gets all 4 Kings?
+4. An urn has 4 balls: 1 blue, 1 green, 1 red and 1 yellow. We draw 4 balls with replacement.
+(a) Find the probability we see 2 blue and 2 green balls.
+(b) Find the probability we see two of one color and 2 of another.
+(c) Find the probability that we are missing at least one color. Please: answer this two ways: one way using inclusion exclusion, another way by considering the complement event.
+(d) Find the probability we get exactly two of one color and one each of two other colors.
+5. (a) I deal y代 写553.420/620 Probability Assignment #03
+代做程序编程语言ou 5 cards from a deck of 52. How many 5-card hands are possible?
+(b) Now I take 5 decks of 52 cards and shuffle them together (for 52 × 5 = 260 cards total). I then deal you 5 cards. How many possible 5-card hands now?
+6. KPOT offers twelve (12) different items on their lunch buffet. They have a special that allows guests to select any four (repetition allowed) items from their buffet table. For example, a guest can take all four items to be fried shrimp, for instance. How many selections are possible?
+7. A license plate is 3 letters from the 26 possible repetition allowed followed by 3 digits from 0 thru 9 with repetition allowed. The speed cameras on the Gwynns Falls Parkway are weird: they can only record which letters and which digits appeared on the speeding car but not the order they appear on the plate. How many distinct recordings can these cameras make?
+8. We have 10 cards numbered 0 thru 9. The cards are shuffled and lined up. If the line up starts or ends with two even digits, we win a prize. Compute the probability we win a prize.
+9. How many sequences of coin tosses have exactly y tails before the rth head? You can assume that both y and r are positive integers.
+10. (a) In class we illustrated the inclusion-exclusion rules and how one could get the inclusion-exclusion rule for 3 events from that of two events. Your job is to show that the inclusion-exclusion rule 4 sets follows from that of the one for three sets and two sets. Hint: Think of P(A1 ∪ A2 ∪ A3 ∪ A4) as P([A1 ∪ A2 ∪ A3] ∪ A4).
+(b) A hat has 12 pieces of paper in it with 4 number 1’s, 4 number 2’s, and 4 number 3’s well-mixed in the hat. A person reaches in and selects 4 pieces of paper at once. What’s the probability they are missing at least one of the numbers in their selection?
 
 
 
