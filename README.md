@@ -1,36 +1,37 @@
 java c
-553.420/620 Probability 
-Assignment #03
-1. When n and k are nonnegative integers with 0 ≤ k ≤ n, the binomial coefficient  can the thought of as the number of subsets of size k from an n-element set and either of the following formulas can be used to compute it:
+553.420/620 Probability
+Assignment #05
+1. Flip a fair coin 3 times. Let X be the discrete random variable that returns the length of the longest run of heads. Identify the support of this random variable and construct its probability mass function. I’ll get you started. . .
 
-Now let x ≠ 0 be any real number. With an abuse of notation, when k any nonnegative integer, we can define
+2. Identify the name of distribution of the following random variables from the descriptions. Be sure to identify the associated parameters from the description if possible and write out its pmf – don’t forget the support of the pmf.
+(a) We toss a fair coin once. Let X count the number of heads.
+(b) A box has 3 red and 2 blue marbles. Draw a marble uniformly at random, note its color and put it back; repeat until you’ve selected 3 times. Let X count the number of red marbles drawn.
+(c) A box has 3 red and 2 blue marbles. Draw a marble uniformly at random, note its color and do not replace; repeat until you’ve selected 3 times. Let X count the number of red marbles drawn.
+(d) A box has 3 red and 2 blue marbles. Draw a marble uniformly at random, note its color and put it back; repeat until you’ve selected 3 red marbles. Let Y count the number of marbles drawn.
+(e) Surface imperfections on a silicon chip occur at a rate of 0.5 imperfection per square centimeter. Let S count the number of imperfections on a 3 cm2chip.
+3. Show      is a pdf. Then compute the CDF of an rv having this pdf.
+4. If you invest $1 with an APR of I × 100%, then in one year you will have 1 + I. After n years you’ll have (1 + I)n. A computer scientist give you two options.
+Option 1 is they will give you an APR of I = .5, i.e, 50%, for 10 years.
+Option 2 is they will equally likely at random pick one of the three interest rates 25%, 50% or 75% and then lock you in at this rate for 10 years, i.e., they are telling you P(I = .25) = P(I = .50) = P(I = .75) = 3/1.
+Notice that E(I) = .50 in option 2 which agrees with option 1.
+Compute E[(1 + I)n] under each option when n = 1, 2, and 10. What do you notice?
+5. Suppose X ∼ Poisson(λ), i.e., is a discrete rv with pmf      for x = 0, 1, 2, . . . .
+(a) Compute E(X) by definition. FYI: I am asking you to simplify      The MacL代 写553.420/620 Probability Assignment #05Matlab
+代做程序编程语言aurin expansion for    may come in handy.
+(b) Compute the MGF of X, namely, the function M(θ) = E(eθX) using the Law of the Unconscious Statisti-cian. It will turn out the this function exists and is finite for every real number θ. Answer: you should show M(θ) = eλ(eθ−1) for −∞ < θ < ∞.
+(c) By taking derivatives of the MGF from part (b), derive the first two moments of the Poisson(λ). Use this information to compute V ar(X).
+6. In class we showed that for a discrete rv X possessing an expected value that for any real numbers a and b, E(aX + b) = aE(X) + b. You show V ar(aX + b) = a2V ar(X). Stating the obvious here but when a = 1 this says V ar(X +b) = V ar(X), i.e., shifting the distribution by a fixed constant does not change the variance.
+7. Let X ∼ geometric(p), where X is the trial of the first success in independent Bernoulli(p) trials; recall the pmf is P(X = x) = p(1 − p)x−1for x = 1, 2, 3, . . . .
+(a) Derive the MGF M(θ) of X and wshow how you find the values of θ for which it exists and is finite. I’ll get you started      Answer: M(θ) = 1−(1 −θp)θ/peθ   for θ < − ln(1 − p).
+(b) By taking the first two derivatives of the MGF from part (a) [okay, I admit this is a little tedious, but is good at getting you to perform. the chain rule carefully] find the mean and variance of X. Answer: E(X) = p/1, V ar(X) = p2/1 − p .
+8. Follow-up to question 7. Sometimes the Y ∼ geometric(p) rv is thought of as the number of failures before the first success, so that Y = X − 1, where X is the trial of the first success.
+(a) Using the fact that Y = X − 1 and, maybe the result of a previous problem on this assignment, easily compute E(Y ) and V ar(Y ).
+(b) Using the result of problem 7 and the fact that Y = X − 1, easily derive the MGF of Y . Hint: E(eθY ) = E(eθ(X−1)) and you know the MGF of X...
+The point of this problem is so that you understand that a geometric rv has both of these interpretations and, consequently, the mean is different (but the variance is not). A similar statement can be made about the different interpretations of the negative binomial rvs.
 
-For example,  and 
-Let r ≥ 1 and y ≥ 0 both be integers. Show
 
-Remark. The binomial coefficient on the right is called the negative binomial coefficient for this reason.
-2. Simplify the following completely with justification. If you are appealing to a theorem or identity, be sure to carefully show what, where, and how it is being used. In all of these expressions n > 0 is an integer.
-(a) 
-(b)  
-(c) In the expansion (2x − 1)10 what is the coefficient of x5? Justify your assertion.
-(d) When n is odd, find a simple expression with justification for 
-3. Consider a standard deck of 52 cards. The following are separate questions unless noted otherwise.
-(a) We deal 13 cards to a player. What’s the probability they have 3 clubs, 3 diamonds, 3 hearts, and 4 spades.
-(b) We deal 13 cards to each of 4 players – a Bridge deal. What’s the probability that one player gets all 4 Aces and another player gets all 4 Kings?
-4. An urn has 4 balls: 1 blue, 1 green, 1 red and 1 yellow. We draw 4 balls with replacement.
-(a) Find the probability we see 2 blue and 2 green balls.
-(b) Find the probability we see two of one color and 2 of another.
-(c) Find the probability that we are missing at least one color. Please: answer this two ways: one way using inclusion exclusion, another way by considering the complement event.
-(d) Find the probability we get exactly two of one color and one each of two other colors.
-5. (a) I deal y代 写553.420/620 Probability Assignment #03
-代做程序编程语言ou 5 cards from a deck of 52. How many 5-card hands are possible?
-(b) Now I take 5 decks of 52 cards and shuffle them together (for 52 × 5 = 260 cards total). I then deal you 5 cards. How many possible 5-card hands now?
-6. KPOT offers twelve (12) different items on their lunch buffet. They have a special that allows guests to select any four (repetition allowed) items from their buffet table. For example, a guest can take all four items to be fried shrimp, for instance. How many selections are possible?
-7. A license plate is 3 letters from the 26 possible repetition allowed followed by 3 digits from 0 thru 9 with repetition allowed. The speed cameras on the Gwynns Falls Parkway are weird: they can only record which letters and which digits appeared on the speeding car but not the order they appear on the plate. How many distinct recordings can these cameras make?
-8. We have 10 cards numbered 0 thru 9. The cards are shuffled and lined up. If the line up starts or ends with two even digits, we win a prize. Compute the probability we win a prize.
-9. How many sequences of coin tosses have exactly y tails before the rth head? You can assume that both y and r are positive integers.
-10. (a) In class we illustrated the inclusion-exclusion rules and how one could get the inclusion-exclusion rule for 3 events from that of two events. Your job is to show that the inclusion-exclusion rule 4 sets follows from that of the one for three sets and two sets. Hint: Think of P(A1 ∪ A2 ∪ A3 ∪ A4) as P([A1 ∪ A2 ∪ A3] ∪ A4).
-(b) A hat has 12 pieces of paper in it with 4 number 1’s, 4 number 2’s, and 4 number 3’s well-mixed in the hat. A person reaches in and selects 4 pieces of paper at once. What’s the probability they are missing at least one of the numbers in their selection?
+
+
 
 
 
